@@ -4,57 +4,313 @@
     <title>Document</title>
     <style>
         body {
-            width: 1600px;
+            width: 1280px;
             height: 3630px;
             text-align: center;
+            padding-left: 80px;
+            padding-right: 50px;
+        }
+        header {
+            width: 1228px;
+            display: flex;
+            margin-top: 40px;
+        }
+        a {
+            text-decoration-line: none;
+            color: #666666;
+        }
+        .header-list{
+            width: 575px; 
+            margin-left: 210px;
+            margin-top: 16.5px;
+            margin-right: 163px;
+        }
+        .header-list > a {
+            margin-right: 50px;
+        }
+        .header-sns > a {
+            margin-right: 20px;
+        }
+        .header-sns > img {
+            width: 30px;
+            height: 30px;
+        }
+        .body1 {
+            width: 1228px;
+            height: 300px;
+            padding-top: 223px;
+            padding-bottom: 306px;
+            display: flex;
+            justify-content:space-between;
+        }
+        .body-intro1 {
+            width: 636px;
+            text-align: left;
+            font-size: 30px;
+        }
+        .body2 {
+            padding-bottom: 306px;
+        }
+        b {
+            font-size: 40px; 
+            color: #42446E;
+        }
+        p {
+            font-size: 25px;
+            color: #666666;
+        }
+        .body3 {
+            margin-bottom: 223px;
+        }
+        footer {
+            width: 1228px;
+            display: flex;
+            margin-bottom: 40px;
+        }
+        .footer-list {
+            width: 447px;
+            margin-top: 16.5px;
+            margin-left: 480px;
+        }
+        .footer-list > span {
+            margin-right: 40px;
+            color: #42446E;
+            font-size: 20px;
+        }
+        .footer-sns {
+            margin-left: 41px;
+        }
+        .footer-sns > a {
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="./images/logo1.png" style="width: 97px; height: 59px;">
-        <a href>Home</a>
-        <a href>About</a>
-        <a href>Tech Stack</a>
-        <a href>Projects</a>
-        <a href>Contact</a>
-        <a href="https://github.com/jiminseon" style="display: inline-block;">
-            <img src="./images/github.svg"/>
-        </a>
-        <a href="https://x.com/" style="display: inline-block;">
-            <img src="./images/twiter.svg"/>
-        </a>
-        <a href="https://www.linkedin.com/" style="display: inline-block;">
-            <img src="./images/linkedin.svg"/>
-        </a>
+        <img src="./images/logo1.png" class="logo" style="width: 97px; height: 59px;">
+        <div class="header-list" >
+            <a href>Home</a>
+            <a href>About</a>
+            <a href>Tech Stack</a>
+            <a href>Projects</a>
+            <a href>Contact</a>
+        </div>
+        <div class="header-sns">
+            <a href="https://github.com/jiminseon" style="display: inline-block;">
+                <img src="./images/github.svg"/>
+            </a>
+            <a href="https://x.com/" style="display: inline-block;">
+                <img src="./images/twiter.svg"/>
+            </a>
+            <a href="https://www.linkedin.com/" style="display: inline-block;">
+                <img src="./images/linkedin.svg"/>
+            </a>
+        </div>
     </header>
-    <div>
-        <div>
+    <div class="body1">
+        <div class="body-intro1">
             <h2>Hi👋, <br> 제 이름은 토리에요! <br> 저는 웹 개발을 잘 해요!</h2>
         </div>
-        <div>
-
+        <div class="body-intro2">
+            <img src="./images/profile1.png" style="width: 300px; height: 300px;">
         </div>
     </div>
-    <div>
-        <h3>My Tech Stack</h3>
-        제가 주로 사용하는 기술 스택들이에오
+    <div class="body2">
         <div>
-
+            <b>My Tech Stack</b>
+            <p>제가 주로 사용하는 기술 스택들이에오</p>
+        </div>
+        <div>
+            <img src="./images/Frame.png" style="width: 1218px; height: 311px;">
         </div>
     </div>
-    <div>
-        <h3>Projects</h3>
-        제가 진행한 프로젝트 들이에요
-        <div>
+    <div class="body3">
+        <b>Projects</b>
+        <p>제가 진행한 프로젝트 들이에요</p>
+        <div class="body3-projects">
+            <table style="width: 90%; margin: 40px auto 0; border-spacing: 30px;">
+                <tr>
+                    <!-- 1-1 -->
+                    <td>
+                        <table style="width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
+                        <tr>
+                            <td colspan="2"><img src="./images/Rectangle.png" alt="Project" style="width: 100%;" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 15px;">
+                            <h3 style="margin: 0;">Project Title goes here</h3>
+                            <p style="font-size: 14px; color: #555;">
+                                This is sample project description random things are here in description.<br>
+                                This is sample project lorem ipsum generator for dummy content.
+                            </p>
+                            <p style="font-size: 13px; color: #666;">
+                                <strong>Tech stack :</strong>
+                                <span style="color: #6a5acd;">HTML, JavaScript, SASS, React</span>
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;"><a href="#">🔗 Live Preview</a></td>
+                            <td style="padding: 15px;"><a href="#">👁️ View Code</a></td>
+                        </tr>
+                        </table>
+                    </td>
+            
+                    <!-- 1-2 -->
+                    <td>
+                        <table style="width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
+                        <tr>
+                            <td colspan="2"><img src="./images/Rectangle.png" alt="Project" style="width: 100%;" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 15px;">
+                            <h3 style="margin: 0;">Project Title goes here</h3>
+                            <p style="font-size: 14px; color: #555;">
+                                This is sample project description random things are here in description.<br>
+                                This is sample project lorem ipsum generator for dummy content.
+                            </p>
+                            <p style="font-size: 13px; color: #666;">
+                                <strong>Tech stack :</strong>
+                                <span style="color: #6a5acd;">HTML, JavaScript, SASS, React</span>
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;"><a href="#">🔗 Live Preview</a></td>
+                            <td style="padding: 15px;"><a href="#">👁️ View Code</a></td>
+                        </tr>
+                        </table>
+                    </td>
 
+                    <!-- 1-3 -->
+                    <td>
+                        <table style="width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
+                        <tr>
+                            <td colspan="2"><img src="./images/Rectangle.png" alt="Project" style="width: 100%;" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 15px;">
+                            <h3 style="margin: 0;">Project Title goes here</h3>
+                            <p style="font-size: 14px; color: #555;">
+                                This is sample project description random things are here in description.<br>
+                                This is sample project lorem ipsum generator for dummy content.
+                            </p>
+                            <p style="font-size: 13px; color: #666;">
+                                <strong>Tech stack :</strong>
+                                <span style="color: #6a5acd;">HTML, JavaScript, SASS, React</span>
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;"><a href="#">🔗 Live Preview</a></td>
+                            <td style="padding: 15px;"><a href="#">👁️ View Code</a></td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+            
+                <!-- 다음 줄-->
+                <tr>
+                    <!-- 2-1 -->
+                    <td>
+                        <table style="width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
+                        <tr>
+                            <td colspan="2"><img src="./images/Rectangle.png" alt="Project" style="width: 100%;" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 15px;">
+                            <h3 style="margin: 0;">Project Title goes here</h3>
+                            <p style="font-size: 14px; color: #555;">
+                                This is sample project description random things are here in description.<br>
+                                This is sample project lorem ipsum generator for dummy content.
+                            </p>
+                            <p style="font-size: 13px; color: #666;">
+                                <strong>Tech stack :</strong>
+                                <span style="color: #6a5acd;">HTML, JavaScript, SASS, React</span>
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;"><a href="#">🔗 Live Preview</a></td>
+                            <td style="padding: 15px;"><a href="#">👁️ View Code</a></td>
+                        </tr>
+                        </table>
+                    </td>
+                    <!-- 2-2 -->
+                    <td>
+                        <table style="width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
+                        <tr>
+                            <td colspan="2"><img src="./images/Rectangle.png" alt="Project" style="width: 100%;" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 15px;">
+                            <h3 style="margin: 0;">Project Title goes here</h3>
+                            <p style="font-size: 14px; color: #555;">
+                                This is sample project description random things are here in description.<br>
+                                This is sample project lorem ipsum generator for dummy content.
+                            </p>
+                            <p style="font-size: 13px; color: #666;">
+                                <strong>Tech stack :</strong>
+                                <span style="color: #6a5acd;">HTML, JavaScript, SASS, React</span>
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;"><a href="#">🔗 Live Preview</a></td>
+                            <td style="padding: 15px;"><a href="#">👁️ View Code</a></td>
+                        </tr>
+                        </table>
+                    </td>
+                    <!-- 2-3 -->
+                    <td>
+                        <table style="width: 100%; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
+                        <tr>
+                            <td colspan="2"><img src="./images/Rectangle.png" alt="Project" style="width: 100%;" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 15px;">
+                            <h3 style="margin: 0;">Project Title goes here</h3>
+                            <p style="font-size: 14px; color: #555;">
+                                This is sample project description random things are here in description.<br>
+                                This is sample project lorem ipsum generator for dummy content.
+                            </p>
+                            <p style="font-size: 13px; color: #666;">
+                                <strong>Tech stack :</strong>
+                                <span style="color: #6a5acd;">HTML, JavaScript, SASS, React</span>
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;"><a href="#">🔗 Live Preview</a></td>
+                            <td style="padding: 15px;"><a href="#">👁️ View Code</a></td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
     <footer>
-        +91 12345 09876
-        info@example.com
-        <hr>
-        Designed and built by Pavan MG with Love & Coffee
+        <img src="./images/logo2.svg">
+        <div class="footer-list">
+            <span>+91 12345 09876</span>
+            <span>info@example.com</span>
+        </div>
+        <div class="footer-sns">
+            <a href="https://github.com/jiminseon" style="display: inline-block;">
+                <img src="./images/github2.svg"/>
+            </a>
+            <a href="https://x.com/" style="display: inline-block;">
+                <img src="./images/twiter2.svg"/>
+            </a>
+            <a href="https://www.linkedin.com/" style="display: inline-block;">
+                <img src="./images/linkedin2.svg"/>
+            </a>
+        </div>
     </footer>
+    <div>
+        <hr>
+        <div style="margin-top: 50px;">Designed and built by Pavan MG with Love & Coffee</div>
+    </div>
 </body>
 </html>
