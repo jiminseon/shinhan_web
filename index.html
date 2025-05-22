@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         body {
@@ -46,7 +47,6 @@
             justify-content:space-between;
         }
         .body-intro1 {
-            width: 636px;
             text-align: left;
             font-size: 30px;
             color:#42446E
@@ -85,7 +85,6 @@
             color: #A7A7A7;
         }
         .footer1, .footer2 {
-            width: 1200px;
             display: flex;
         }
         .footer-list {
@@ -122,7 +121,139 @@
             background-clip: text; 
             color: transparent;           
         }
-        
+        .footer2-by {
+            padding-left: 185px;
+        }
+        @media (max-width: 768px) {
+            body {
+                width: 100%;
+                height: 3630px;
+                text-align: center;
+                padding-left: 80px;
+                padding-right: 50px;
+                margin: 0 auto;
+            }
+            header {
+                width: 100%;
+                margin-top: 40px;
+                position: relative;
+            }
+            .header-list{ 
+                margin-left: 21px;
+                margin-top: 16.5px;
+                margin-right: 16px;
+            }
+            .header-list > a {
+                margin-right: 10px;
+            }
+            .header-sns > a {
+                margin-right: 20px;
+            }
+            .header-sns > img {
+                width: 30px;
+                height: 30px;
+            }
+            .body1 {
+                width: 100%;
+                height: 300px;
+                margin-top: 67px;
+                padding-bottom: 163px;
+                flex-direction: column-reverse;
+            }
+            .body-intro1 {
+                text-align: left;
+                font-size: 30px;
+                color:#42446E;
+                text-align: center;
+            }
+            
+            .body2 {
+                padding-bottom: 160px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .tech-stacks {
+                display: flex;
+                gap: 30px;
+                flex-wrap: wrap;
+            }
+            .tech-stacks img {
+                width: 80px;
+                height: 80px;
+            }
+
+            b {
+                font-size: 40px; 
+                color: #42446E;
+            }
+            p {
+                font-size: 25px;
+                color: #666666;
+            }
+            .body3 {
+                margin-bottom: 200px;
+            }
+            .body3-projects, .body3-projects > table {
+                width: 100%;
+            }
+            .body3-projects > table {
+                display: block;
+            }
+            .project1 tr {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .project1 td {
+                display: block;
+            }
+            .project2 {
+                display: none;
+            }
+            footer {
+                width: 100%;
+                margin-bottom: 40px;
+                color: #A7A7A7;
+            }
+            .footer1 > .footer-list, .footer-sns {
+                flex-direction: row ;
+            }
+            .footer-list {
+                margin-top: 16.5px;
+                margin-left: 48px;
+            }
+            .footer-list > span {
+                font-size: 20px;
+            }
+
+            .footer-sns > a {
+                margin-right: 10px;
+            }
+            .footer2 {
+                margin-top: 50px;
+            }
+            .footer2-list {
+                display: none;
+            }
+            .tory{
+                background-image: linear-gradient(90deg, #13B0F5 -4%, #13B0F5 -2%, #E70FAA 99%);
+                background-clip: text; 
+                color: transparent;
+            }
+            .footer2-by > span {
+                background-image: linear-gradient(90deg, #13B0F5 -4%, #13B0F5 -2%, #E70FAA 99%);
+                background-clip: text; 
+                color: transparent;           
+            }
+            .phone {
+                display: none;
+            }
+            .footer2-by {
+                padding-left: 0px;
+                margin: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -209,7 +340,7 @@
         <p>Things I've built so far</p>
         <div class="body3-projects">
             <table style="width: 90%; margin: 40px auto 0; border-spacing: 30px;">
-                <tr>
+                <tr class="project1"> 
                     <!-- 1-1 -->
                     <td>
                         <table style="width: 376px; height: 567px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
@@ -290,7 +421,7 @@
                 </tr>
             
                 <!-- 다음 줄-->
-                <tr>
+                <tr class="project2">
                     <!-- 2-1 -->
                     <td>
                         <table style="width: 376px; height: 567px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
@@ -374,7 +505,7 @@
         <div class="footer1">
             <img src="./images/logo2.svg">
             <div class="footer-list">
-                <span>+91 12345 09876</span>
+                <span class="phone">+91 12345 09876</span>
                 <span>info@example.com</span>
             </div>
             <div class="footer-sns">
@@ -398,7 +529,7 @@
                 <a href>Projects</a>
                 <a href>Contact</a>
             </div>
-            <div class="footer2-by" style="padding-left: 185px;">Designed and built by 
+            <div class="footer2-by">Designed and built by 
                 <span>Pavan MG</span> with 
                 <span>Love</span> & 
                 <span>Coffee</span>
